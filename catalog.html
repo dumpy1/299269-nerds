@@ -7,29 +7,35 @@
 
 <body>
   <header>
-    <nav class="main-nav">
-      <a href="#"><img src="/img/logo.png" alt="nerds"></a>
-      <ul>
-        <li><a>Студия</a></li>
-        <li><a>Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a>Контакты</a></li>
-      </ul>
-      <div class="basket">
-        <a href="#">Корзина</a>
-      </div>
-    </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <div class="container">
+      <a  href="index.html" class="logo"><img src="logo.png" alt="nerds"></a>
+      <nav class="main-nav">
+        <ul class="main-nav-ul">
+          <li class="main-nav-li"><a class="main-nav-a" href="">Студия</a></li>
+          <li class="main-nav-li"><a class="main-nav-a" href="">Клиенты</a></li>
+          <li class="main-nav-li"><a class="main-nav-a" href="catalog.html">Магазин</a></li>
+          <li class="main-nav-li"><a class="main-nav-a" href="">Контакты</a></li>
+        </ul>
+        <div class="basket">
+          <a class="basket-a" href="#">Корзина</a>
+        </div>
+      </nav>
+
+        <h1 class="header-h1">Магазин готовых шаблонов</h1>
+
+    </div>
   </header>
-  <main class="container">
+
+  <main>
+   <div class="container">
     <div class="filter">
-      <form>
+      <form action="https://echo.htmlacademy.ru" method="get">
         <div class="filter-item">
           <p>стоимость:</p>
         </div>
 
         <div class="filter-item">
-          <p>Сетка:</p>
+          <h2>Сетка:</h2>
           <label>
       <input type="radio" name="grid" value="Адаптивная">
       Адаптивная
@@ -99,28 +105,30 @@
         <a class="btn active">3</a>
         <a class="btn active">следующая</a>
       </div>
-
+    </div>
     </div>
 
     <div class="map">
-      <div class="adress">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn">Напишите нам</a>
-      </div>
-    </div>
+          <div class="map-adress">
+            <b class="map-adress-b">NЁRDS DESIGN STUDIO</b>
+            <p class="map-adress-p">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="map-adress-p">тел. +7 (812) 275-75-75</p>
+            <a class="btn map-adress-btn">Напишите нам</a>
+          </div>
+        </div>
   </main>
 
-  <footer class="main-footer container">
-    <div class="social">
-      <a class="scl-btn vk">ВКонтакте</a>
-      <a class="scl-btn fb">Facebook</a>
-      <a class="scl-btn inst">Instagramm</a>
-    </div>
-    <div>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a class="social-a vk"></a>
+        <a class="social-a fb"></a>
+        <a class="social-a inst"></a>
+      </div>
+      <div class="footer-lead">
+        <b class="footer-lead-b">Давайте дружить, это выгодно!</b>
+        <p class="footer-lead-p">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
 </body>
