@@ -2,28 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html" class="logo"><img src="logo.png" alt="nerds"></a>
+      <a class="logo"><img src="logo.png" alt="nerds"></a>
       <nav class="main-nav">
-        <ul class="main-nav-ul">
-          <li class="main-nav-li"><a class="main-nav-a" href="">Студия</a></li>
-          <li class="main-nav-li"><a class="main-nav-a" href="">Клиенты</a></li>
-          <li class="main-nav-li"><a class="main-nav-a" href="catalog.html">Магазин</a></li>
-          <li class="main-nav-li"><a class="main-nav-a" href="">Контакты</a></li>
+        <ul class="main-nav-menu">
+          <li class="main-nav-item"><a class="main-nav-link" href="">Студия</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="">Клиенты</a></li>
+          <li class="main-nav-item active-item"><a class="main-nav-link">Магазин</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="">Контакты</a></li>
         </ul>
         <div class="basket">
-          <a class="basket-a" href="#">Корзина</a>
+          <a class="basket-link" href="#">Корзина</a>
         </div>
       </nav>
-
-      <h1 class="header-h1">Магазин готовых шаблонов</h1>
-
+      <h1 class="header-title catalog-title">Магазин готовых шаблонов</h1>
     </div>
   </header>
 
@@ -32,47 +31,60 @@
       <div class="form">
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-item">
-            <h2>стоимость:</h2>
+            <h2 class="filter-item-title">стоимость:</h2>
+
+            <div class="filter-slider">
+              <div class="main-line">
+                <div class="current-line"></div>
+              </div>
+              <span class="mark start-mark"></span>
+              <span class="mark finish-mark"></span>
+            </div>
+            <label for="start-value">от</label>
+            <input id="start-value" type="text" name="start-value" value="0">
+            <label for="finish-value">до</label>
+            <input id="finish-value" type="text" name="finish-value" value="15 000">
           </div>
 
           <div class="filter-item">
-            <h2>Сетка:</h2>
-            <label>
-      <input type="radio" name="grid" value="Адаптивная">
-      Адаптивная
-      </label>
-            <label>
-      <input type="radio" name="grid" value="Фиксированая">
-      Фиксированая
-      </label>
-            <label>
-      <input type="radio" name="grid" value="Резиновая">
-      Резиновая
-      </label>
+            <h2 class="filter-item-title">Сетка:</h2>
+            <div class="form-wrapper">
+              <label for="adaptive">Адаптивная</label>
+              <input id="adaptive" type="radio" name="grid" value="Адаптивная">
+            </div>
+            <div class="form-wrapper">
+              <label for="fixed">Фиксированная</label>
+              <input id="fixed" type="radio" name="grid" value="Фиксированая">
+            </div>
+            <div class="form-wrapper">
+              <label for="rubber">Резиновая</label>
+              <input id="rubber" type="radio" name="grid" value="Резиновая">
+            </div>
           </div>
 
           <div class="filter-item">
-            <h2>особенности:</h2>
-            <label>
-        <input type="checkbox" name="slider" value="" checked>
-        Слайдер
-      </label>
-            <label>
-        <input type="checkbox" name="features" value="">
-        Блок преимуществ
-      </label>
-            <label>
-        <input type="checkbox" name="news" value="" checked>
-        Новости
-      </label>
-            <label>
-        <input type="checkbox" name="gallery" value="">
-        Галерея
-      </label>
-            <label>
-        <input type="checkbox" name="basket" value="">
-        Корзина
-      </label>
+            <h2 class="filter-item-title">особенности:</h2>
+            <div class="form-wrapper">
+              <label for="slider">Слайдер</label>
+              <input id="slider" type="checkbox" name="slider" value="" checked>
+            </div>
+            <div class="form-wrapper">
+              <label for="features">Блок преимуществ</label>
+              <input id="features" type="checkbox" name="features" value="">
+            </div>
+            <div class="form-wrapper">
+              <label for="news">Новости</label>
+              <input id="news" type="checkbox" name="news" value="" checked>
+            </div>
+            <div class="form-wrapper">
+              <label for="gallery">Галерея</label>
+              <input id="gallery" type="checkbox" name="gallery" value="">
+            </div>
+            <div class="form-wrapper">
+              <label for="basket">Корзина</label>
+              <input id="basket" type="checkbox" name="basket" value="">
+            </div>
+
 
           </div>
           <button class="btn" type="submit">ПОКАЗАТЬ</button>
@@ -80,40 +92,134 @@
       </div>
       <div class="catalog">
         <div class="sorting">
-          <h2 class="">СОРТИРОВАТЬ:</h2>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
+          <h2 class="sorting-title">СОРТИРОВАТЬ:</h2>
+          <ul class="sorting-list">
+            <li class="sorting-list-item">По цене</li>
+            <li class="sorting-list-item">По типу</li>
+            <li class="sorting-list-item">По названию</li>
           </ul>
-          <ul>
-            <li>по убыванию</li>
-            <li>по возрастанию</li>
+          <ul class="sorting-list">
+            <li class="sorting-list-item down">по убыванию</li>
+            <li class="sorting-list-item up">по возрастанию</li>
           </ul>
         </div>
         <div class="catalog-items">
-          <div class="catalog-item"></div>
-          <div class="catalog-item"></div>
-          <div class="catalog-item"></div>
-          <div class="catalog-item"></div>
-          <div class="catalog-item"></div>
-          <div class="catalog-item"></div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="SEDONA">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Sedona</h2>
+              <p class="text">Информационный сайт для туристов</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="Pink App">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Pink App</h2>
+              <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="Barbershop">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Barbershop</h2>
+              <p class="text">Сайт салоны красоты.Для мужчин, да.</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="MISHKA">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">MISHKA</h2>
+              <p class="text">Интернет-магазин вязаных игрушек</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="A Plus">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">A Plus</h2>
+              <p class="text">Лендинг курсов повышения квалификации</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-topbar">
+              <div class="wrapper">
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+                <span class="white-circle"></span>
+              </div>
+            </div>
+            <div class="block-image">
+              <img src="img/" alt="КВАСТ">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">КВАСТ</h2>
+              <p class="text">Промо-сайт производителя крафтового кваса</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </div>
         </div>
-
         <div class="paginator">
-          <a class="btn active">1</a>
-          <a class="btn active">2</a>
-          <a class="btn active">3</a>
-          <a class="btn active">следующая</a>
+          <a class="btn paginator-btn active">1</a>
+          <a class="btn paginator-btn" href="#">2</a>
+          <a class="btn paginator-btn" href="#">3</a>
+          <a class="btn paginator-btn" href="#">следующая</a>
         </div>
       </div>
     </div>
-
     <div class="map">
-      <div class="map-adress">
-        <b class="map-adress-b">NЁRDS DESIGN STUDIO</b>
-        <p class="map-adress-p">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        <p class="map-adress-p">тел. +7 (812) 275-75-75</p>
+      <div class="map-addres">
+        <h2 class="map-address-b">NЁRDS DESIGN STUDIO</h2>
+        <p class="text map-address-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+        <p class="text map-address-text">тел. +7 (812) 275-75-75</p>
         <a class="btn map-adress-btn">Напишите нам</a>
       </div>
     </div>
@@ -122,13 +228,13 @@
   <footer>
     <div class="container">
       <div class="social">
-        <a class="social-a vk"></a>
-        <a class="social-a fb"></a>
-        <a class="social-a inst"></a>
+        <a class="social-a vk">Вконтакте</a>
+        <a class="social-a fb">Facebook</a>
+        <a class="social-a inst">Instagram</a>
       </div>
       <div class="footer-lead">
-        <b class="footer-lead-b">Давайте дружить, это выгодно!</b>
-        <p class="footer-lead-p">Скидка 10% для друзей из социальных сетей.</p>
+        <b class="footer-lead-title">Давайте дружить, это выгодно!</b>
+        <p class="footer-lead-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
