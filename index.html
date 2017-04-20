@@ -20,30 +20,24 @@
           <li class="main-nav-item"><a class="main-nav-link" href="">Контакты</a></li>
         </ul>
         <div class="basket">
-          <a class="basket-link" href="#" alt="Корзина">Корзина</a>
+          <a class="basket-link" href="#">Корзина</a>
         </div>
       </nav>
       <div class="header-slider">
         <div class="slider1">
-          <div class="header-slider-lead">
-            <b class="header-slider-title">Долго, дорого, скрупулезно.</b>
-            <p class="header-slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
+          <h2 class="header-slider-title">Долго, дорого, скрупулезно.</h2>
+          <p class="header-slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="slider2">
-          <div class="header-slider-lead">
-            <b class="header-slider-title">Любим математику как никто другой</b>
-            <p class="header-slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
+          <h2 class="header-slider-title">Любим математику как никто другой</h2>
+          <p class="header-slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="slider3">
-          <div class="header-slider-lead">
-            <b class="header-slider-title">Только ночь, только хардкор</b>
-            <p class="header-slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
+          <h2 class="header-slider-title">Только ночь, только хардкор</h2>
+          <p class="header-slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="slider-indicator">
           <span class="slider-indicator-span"></span>
@@ -133,22 +127,26 @@
     </div>
   </footer>
 
-  <div class="modal container">
+  <div class="modal">
     <button class="close">закрыть</button>
     <h2 class="modal-title">Напишите нам</h2>
     <form class="feedback" action="http://jaksonprojekt.ru/htmlacademy.ru" method="get">
       <div class="modal-input">
         <p class="modal-text">Ваше имя:</p>
-        <input type="text" value="" placeholder="Представьтесь, пожалуйста">
+        <label for="name"></label>
+        <input id="name" type="text" value="" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="modal-input">
         <p class="modal-text">Ваш e-mail:</p>
-        <input type="email" placeholder="Для отправки ответа">
+        <label for="email"></label>
+        <input id="email" type="email" placeholder="Для отправки ответа">
       </div>
       <div class="modal-input">
         <p class="modal-text">Текст письма:</p>
-        <textarea cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
+        <label for="textarea"></label>
+        <textarea id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
       </div>
+      <button type="submit">ОТПРАВИТЬ</button>
     </form>
   </div>
 </body>
