@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="logo"><img src="img/logo-main.png" width="161" height="65" alt="nerds"></a>
+      <nav class="main-nav">
+        <ul class="main-nav-menu">
+          <li class="main-nav-item"><a class="main-nav-link" href="">Студия</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="">Клиенты</a></li>
+          <li class="main-nav-item active-item"><a class="main-nav-link">Магазин</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="">Контакты</a></li>
+        </ul>
+        <div class="basket">
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
+      </nav>
+      <h1 class="header-title catalog-title">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="form">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="filter-item">
+            <h2 class="filter-item-title">cтоимость:</h2>
+            <div class="filter-slider">
+              <div class="main-line">
+                <div class="current-line"></div>
+              </div>
+              <span class="mark start-mark"></span>
+              <span class="mark finish-mark"></span>
+            </div>
+            <label class="text" for="start-value">от</label>
+            <input class="price-file" id="start-value" type="text" name="start-value" value="0">
+            <label class="text" for="finish-value">до</label>
+            <input class="price-file" id="finish-value" type="text" name="finish-value" value="15 000">
+          </div>
+          <div class="filter-item">
+            <h2 class="filter-item-title">сетка:</h2>
+            <div class="form-wrapper">
+              <label for="adaptive">Адаптивная</label>
+              <input id="adaptive" type="radio" name="grid" value="Адаптивная">
+            </div>
+            <div class="form-wrapper">
+              <label for="fixed">Фиксированная</label>
+              <input id="fixed" type="radio" name="grid" value="Фиксированая">
+            </div>
+            <div class="form-wrapper">
+              <label for="rubber">Резиновая</label>
+              <input id="rubber" type="radio" name="grid" value="Резиновая">
+            </div>
+          </div>
+          <div class="filter-item">
+            <h2 class="filter-item-title">особенности:</h2>
+            <div class="form-wrapper">
+              <label for="slider">Слайдер</label>
+              <input id="slider" type="checkbox" name="slider" checked>
+            </div>
+            <div class="form-wrapper">
+              <label for="features">Блок преимуществ</label>
+              <input id="features" type="checkbox" name="features">
+            </div>
+            <div class="form-wrapper">
+              <label for="news">Новости</label>
+              <input id="news" type="checkbox" name="news" checked>
+            </div>
+            <div class="form-wrapper">
+              <label for="gallery">Галерея</label>
+              <input id="gallery" type="checkbox" name="gallery">
+            </div>
+            <div class="form-wrapper">
+              <label for="basket">Корзина</label>
+              <input id="basket" type="checkbox" name="basket">
+            </div>
+          </div>
+          <button class="btn" type="submit">показать</button>
+        </form>
+      </div>
+      <div class="catalog">
+        <div class="sorting">
+          <h2 class="sorting-title">СОРТИРОВАТЬ:</h2>
+          <ul class="sorting-list">
+            <li class="sorting-list-item"><a class="sorting-list-link" href="#">По цене</a></li>
+            <li class="sorting-list-item"><a class="sorting-list-link" href="#">По типу</a></li>
+            <li class="sorting-list-item"><a class="sorting-list-link" href="#">По названию</a></li>
+          </ul>
+          <ul class="sorting-list">
+            <li class="sorting-list-item down"><a class="sorting-list-link" href="#">по убыванию</a></li>
+            <li class="sorting-list-item up"><a class="sorting-list-link" href="#">по возрастанию</a></li>
+          </ul>
+        </div>
+        <div class="catalog-items">
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/sedona.jpg" width="360" height="576" alt="SEDONA">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Sedona</h2>
+              <p class="text">Информационный сайт для туристов</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/pink.jpg" width="360" height="576" alt="Pink App">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Pink App</h2>
+              <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">Barbershop</h2>
+              <p class="text">Сайт салоны красоты.Для мужчин, да.</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/mishka.jpg" width="360" height="576" alt="MISHKA">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">MISHKA</h2>
+              <p class="text">Интернет-магазин вязаных игрушек</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">A Plus</h2>
+              <p class="text">Лендинг курсов повышения квалификации</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-topbar">
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+              <span class="white-circle"></span>
+            </div>
+            <div class="block-image">
+              <img src="img/kvast.jpg" width="360" height="576" alt="КВАСТ">
+            </div>
+            <div class="catalog-item-hover">
+              <h2 class="title hover-title">КВАСТ</h2>
+              <p class="text">Промо-сайт производителя крафтового кваса</p>
+              <a class="btn hover-link" href="#">9 900 руб.</a>
+            </div>
+          </article>
+        </div>
+        <div class="paginator">
+          <a class="btn paginator-btn active">1</a>
+          <a class="btn paginator-btn" href="#">2</a>
+          <a class="btn paginator-btn" href="#">3</a>
+          <a class="btn paginator-btn" href="#">следующая</a>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="map-addres">
+        <h2 class="map-address-b">NЁRDS DESIGN STUDIO</h2>
+        <p class="text map-address-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+        <p class="text map-address-text">тел. +7 (812) 275-75-75</p>
+        <a class="btn map-adress-btn">Напишите нам</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a class="social-a vk">Вконтакте</a>
+        <a class="social-a fb">Facebook</a>
+        <a class="social-a inst">Instagram</a>
+      </div>
+      <div class="footer-lead">
+        <b class="footer-lead-title">Давайте дружить, это выгодно!</b>
+        <p class="footer-lead-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <button class="close">закрыть</button>
+    <h2 class="modal-title">Напишите нам</h2>
+    <form class="feedback" action="http://jaksonprojekt.ru/htmlacademy.ru" method="get">
+      <div class="modal-input">
+        <label class="modal-input-tile" for="name">Ваше имя:</label>
+        <input class="modal-input-file" id="name" type="text" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="modal-input">
+        <label class="modal-input-tile" for="email">Ваш e-mail:</label>
+        <input class="modal-input-file" id="email" type="email" placeholder="Для отправки ответа">
+      </div>
+      <div class="modal-input">
+        <label class="modal-input-tile" for="textarea">Текст письма:</label>
+        <textarea class="modal-input-file textarea" id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
+      </div>
+      <button class="btn modal-btn" type="submit" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
