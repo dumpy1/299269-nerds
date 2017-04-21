@@ -11,7 +11,7 @@
 
   <header>
     <div class="container">
-      <a class="logo"><img src="logo.png" alt="nerds"></a>
+      <a class="logo"><img src="logo.png" width="161" height="65" alt="nerds"></a>
       <nav class="main-nav">
         <ul class="main-nav-menu">
           <li class="main-nav-item"><a class="main-nav-link" href="">Студия</a></li>
@@ -24,17 +24,17 @@
         </div>
       </nav>
       <div class="header-slider">
-        <div class="slider1">
+        <div class="slider">
           <h2 class="header-slider-title">Долго, дорого, скрупулезно.</h2>
           <p class="header-slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
         </div>
-        <div class="slider2">
+        <div class="slider">
           <h2 class="header-slider-title">Любим математику как никто другой</h2>
           <p class="header-slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
           <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
         </div>
-        <div class="slider3">
+        <div class="slider">
           <h2 class="header-slider-title">Только ночь, только хардкор</h2>
           <p class="header-slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="btn header-slider-link">УЗНАТЬ БОЛЬШЕ</a>
@@ -79,7 +79,7 @@
           </ul>
         </div>
         <div class="promo-banner">
-          <img class="promo-banner-img" src="img/" alt="">
+          <img class="promo-banner-img" src="img/nerds-illustration.jpg" width="360" height="208" alt="banner">
           <h2 class=" title promo-banner-title">с 2004 года Любим точность во всем:</h2>
           <ul class="promo-banner-list">
             <li class="promo-banner-element"><b class="promo-banner-rate">146%</b>Уровень самоотдачи</li>
@@ -90,16 +90,16 @@
       </div>
       <div class="partners">
         <div>
-          <a class="partners-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt=""></a>
+          <a class="partners-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy"></a>
         </div>
         <div>
-          <a class="partners-logo" href="#"><img src="img/logo-2.png" alt=""></a>
+          <a class="partners-logo" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"></a>
         </div>
         <div>
-          <a class="partners-logo" href="#"><img src="img/logo-3.png" alt=""></a>
+          <a class="partners-logo" href="#"><img src="img/logo-3.png" width="185" height="52" alt="PINK"></a>
         </div>
         <div>
-          <a class="partners-logo" href="#"><img src="img/logo-4.png" alt=""></a>
+          <a class="partners-logo" href="#"><img src="img/logo-4.png" width="173" height="84" alt="MISHKA"></a>
         </div>
       </div>
     </div>
@@ -132,20 +132,21 @@
     <h2 class="modal-title">Напишите нам</h2>
     <form class="feedback" action="http://jaksonprojekt.ru/htmlacademy.ru" method="get">
       <div class="modal-input">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" value="" placeholder="Представьтесь, пожалуйста">
+        <label class="modal-input-tile" for="name">Ваше имя:</label>
+        <input class="modal-input-file" id="name" type="text" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="modal-input">
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="email" placeholder="Для отправки ответа">
+        <label class="modal-input-tile" for="email">Ваш e-mail:</label>
+        <input class="modal-input-file" id="email" type="email" placeholder="Для отправки ответа">
       </div>
       <div class="modal-input">
-        <label for="textarea">Текст письма:</label>
-        <textarea id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
+        <label class="modal-input-tile" for="textarea">Текст письма:</label>
+        <textarea class="modal-input-file textarea" id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
       </div>
-      <button class="btn modal-btn" type="submit">ОТПРАВИТЬ</button>
+      <button class="btn modal-btn" type="submit" type="submit">ОТПРАВИТЬ</button>
     </form>
   </div>
+
 </body>
 
 </html>

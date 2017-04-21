@@ -10,7 +10,7 @@
 <body>
   <header>
     <div class="container">
-      <a class="logo"><img src="logo.png" alt="nerds"></a>
+      <a class="logo"><img src="img/logo-main.png" width="161" height="65" alt="nerds"></a>
       <nav class="main-nav">
         <ul class="main-nav-menu">
           <li class="main-nav-item"><a class="main-nav-link" href="">Студия</a></li>
@@ -32,7 +32,6 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-item">
             <h2 class="filter-item-title">cтоимость:</h2>
-
             <div class="filter-slider">
               <div class="main-line">
                 <div class="current-line"></div>
@@ -45,7 +44,6 @@
             <label class="text" for="finish-value">до</label>
             <input class="price-file" id="finish-value" type="text" name="finish-value" value="15 000">
           </div>
-
           <div class="filter-item">
             <h2 class="filter-item-title">сетка:</h2>
             <div class="form-wrapper">
@@ -61,7 +59,6 @@
               <input id="rubber" type="radio" name="grid" value="Резиновая">
             </div>
           </div>
-
           <div class="filter-item">
             <h2 class="filter-item-title">особенности:</h2>
             <div class="form-wrapper">
@@ -84,8 +81,6 @@
               <label for="basket">Корзина</label>
               <input id="basket" type="checkbox" name="basket">
             </div>
-
-
           </div>
           <button class="btn" type="submit">показать</button>
         </form>
@@ -111,7 +106,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="SEDONA">
+              <img src="img/sedona.jpg" width="360" height="576" alt="SEDONA">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">Sedona</h2>
@@ -126,7 +121,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="Pink App">
+              <img src="img/pink.jpg" width="360" height="576" alt="Pink App">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">Pink App</h2>
@@ -141,7 +136,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="Barbershop">
+              <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">Barbershop</h2>
@@ -156,7 +151,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="MISHKA">
+              <img src="img/mishka.jpg" width="360" height="576" alt="MISHKA">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">MISHKA</h2>
@@ -171,7 +166,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="A Plus">
+              <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">A Plus</h2>
@@ -186,7 +181,7 @@
               <span class="white-circle"></span>
             </div>
             <div class="block-image">
-              <img src="img/" alt="КВАСТ">
+              <img src="img/kvast.jpg" width="360" height="576" alt="КВАСТ">
             </div>
             <div class="catalog-item-hover">
               <h2 class="title hover-title">КВАСТ</h2>
@@ -232,16 +227,16 @@
     <h2 class="modal-title">Напишите нам</h2>
     <form class="feedback" action="http://jaksonprojekt.ru/htmlacademy.ru" method="get">
       <div class="modal-input">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" value="" placeholder="Представьтесь, пожалуйста">
+        <label class="modal-input-tile" for="name">Ваше имя:</label>
+        <input class="modal-input-file" id="name" type="text" placeholder="Представьтесь, пожалуйста">
       </div>
       <div class="modal-input">
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="email" placeholder="Для отправки ответа">
+        <label class="modal-input-tile" for="email">Ваш e-mail:</label>
+        <input class="modal-input-file" id="email" type="email" placeholder="Для отправки ответа">
       </div>
       <div class="modal-input">
-        <label for="textarea">Текст письма:</label>
-        <textarea id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
+        <label class="modal-input-tile" for="textarea">Текст письма:</label>
+        <textarea class="modal-input-file textarea" id="textarea" cols="50" rows="6" placeholder="Напишите что-нибуть..."></textarea>
       </div>
       <button class="btn modal-btn" type="submit" type="submit">ОТПРАВИТЬ</button>
     </form>
