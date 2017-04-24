@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 
 <body>
 
   <header>
     <div class="container">
-      <a class="logo"><img src="logo.png" width="161" height="65" alt="nerds"></a>
+      <a class="logo"><img src="img/logo.png" width="161" height="65" alt="nerds"></a>
       <nav class="main-nav">
         <ul class="main-nav-menu">
           <li class="main-nav-item"><a class="main-nav-link" href="">Студия</a></li>

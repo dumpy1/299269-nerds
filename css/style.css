@@ -1,9 +1,16 @@
 body {
+  width: 1440px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: #283136;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -16,4 +23,121 @@ h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 160px;
+  float: left;
+}
+
+.main-nav {
+  min-width: 760px;
+}
+
+.basket {
+  min-width: 160px;
+}
+
+.header-slider {
+  margin-bottom: 80px;
+}
+
+.feature {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.feature-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+.promo {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.promo-lead {
+  min-width: 700px;
+  float: left;
+}
+
+.promo-banner {
+  width: 360px;
+}
+
+.partners {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.parteners-logo {
+  widows: 260px;
+  float: left;
+  margin-right: 40px;
+}
+
+.partners-logo:last-child {
+  margin-right: 0;
+}
+
+.map {
+  width: 1440px;
+}
+
+.map-addres {
+  width: 319px;
+  margin-right: 140px;
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+.social {
+  width: 300px;
+  float: left;
+  margin-right: 60px;
+}
+
+.footer-lead {
+  min-width: 640px;
+  float: left;
+}
+
+.form {
+  width: 260px;
+  float: left;
+}
+
+.catalog {
+  width: 800px;
+  float: right;
+}
+
+.catalof-item {
+  width: 360px;
+  margin-bottom: 36px;
+  margin-left: 40px;
+}
+
+.paginator {
+  width: 460px;
+  margin: 40px 60px 300px;
 }
