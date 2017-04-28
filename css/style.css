@@ -4,6 +4,8 @@ body {
   font-weight: 400;
   line-height: 18px;
   color: #283136;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -15,7 +17,7 @@ body {
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+/*  align-items: center;*/
 }
 
 h1 {
@@ -140,21 +142,57 @@ header {
 
 .form {
   width: 260px;
-  float: left;
 }
 
 .catalog {
-  width: 800px;
-  float: right;
+  width: 760px;
 }
 
-.catalof-item {
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.catalog-item {
   width: 360px;
-  margin-bottom: 36px;
-  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.sorting-list-item {
+  display: inline-block;
 }
 
 .paginator {
   width: 460px;
   margin: 40px 60px 300px;
+}
+
+.modal {
+  width: 760px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 72px;
+  }
+
+.feedback {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-input {
+  width: 360px;
+}
+
+.textarea {
+  width: 760px;
 }
